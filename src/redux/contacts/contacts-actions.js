@@ -2,7 +2,6 @@ import { nanoid } from "nanoid"
 // import { ADD_CONTACTS, REMOVE_CONTACTS } from "./contacts-types"
 import { createAction } from "@reduxjs/toolkit";
 
-
 export const addContacts = createAction('contacts/add', (data) =>{
     return {
             payload:{

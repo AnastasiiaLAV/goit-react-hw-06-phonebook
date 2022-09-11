@@ -16,43 +16,6 @@ const deleteContact =(payload) => {
     dispatch(removeContacts(payload));
   } 
 
-  // const [contacts, setContacts] = useState(
-  //   JSON.parse(window.localStorage.getItem('contacts')) ?? []);
-  
-  // const [filter, setFilter] = useState('');
-
-  // const addContact = ({ name, number }) => {
-  //   const contact = {
-  //     id: nanoid(5),
-  //     name,
-  //     number,
-  //   };
-    
-  //   const sameСontacts = contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase() || contact.number === number);
-
-  //   if (sameСontacts) {
-  //     Notify.warning('This contact already exists');
-  //     return;
-  //   }
-  //     setContacts(prevContacts => [...prevContacts, contact])
-  // }
-
-  // useEffect(() => {
-  //   window.localStorage.setItem('contacts', JSON.stringify(contacts));
-  // }, [contacts]
-  // );
-  
-  // const filterOnChange = (e) => setFilter(e.target.value);
-
-  // const deleteContact = useCallback((id) => {
-  //   setContacts(prevContacts => prevContacts.filter(contact => contact.id !== id))
-  // }, [setContacts]);
-
-  // const visibleContacts = () => {
-  //   return contacts.filter(({ name }) =>
-  //     name.toLowerCase().includes(filter.toLowerCase()))
-  // };
-
   return (
       <Wrapper>
         <h1>Phonebook</h1>

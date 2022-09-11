@@ -7,6 +7,7 @@ const contactsReducer = createReducer([], {
 })
 
 export default contactsReducer;
+
 // -----Redux-----
 // const initialStore = [];
 

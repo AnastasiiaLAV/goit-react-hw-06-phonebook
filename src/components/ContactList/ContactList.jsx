@@ -21,7 +21,7 @@ ContactList.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.exact({
     id:PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    number:PropTypes.string.isRequired
+    number:PropTypes.number.isRequired
     })),
   onDeleteContact:PropTypes.func
 }
