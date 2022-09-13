@@ -5,6 +5,14 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import contactsReducer from "./contacts/contacts-reducer";
 import filterReducer from "./filter/filter-reducer";
 import storage from "redux-persist/lib/storage"
+import {
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist';
 // const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 const rootReducer = combineReducers({
